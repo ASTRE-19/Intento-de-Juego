@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <conio.h>//detecta las teclas
 #include "NAVE.h"
+#include "Asteroid.h"
 
 
 void ocultarCursor() {
@@ -20,14 +21,19 @@ void ocultarCursor() {
 int main() {
 	ocultarCursor();
 	
-	NAVE N(7,7);  //Crear el objeto
+	NAVE N(7,7,3,3);  //Crear el objeto
+	N.pintar_limites();
 	N.pintar();
+	N.pintarCorazones();
+
+	Asteroid ast(10, 4);
 
 	bool game_over = false;
 	while(!game_over) {
 		
-
+		ast.caer();
 		N.mover();
+		
 
 		Sleep(30);
 	}
