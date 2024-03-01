@@ -20,9 +20,9 @@ public:
 		y = _y*/;
 	}; //Constructor otra forma
 	void pintar() {
-		gotoxy(x, y);printf("  %c",30);
+		gotoxy(x, y);printf("  %c",35);
 		gotoxy(x, y + 1);printf(" %c%c%c", 40, 207, 41);
-		gotoxy(x, y + 2);printf("%c%c %c%c", 35, 190, 190, 35);
+		gotoxy(x, y + 2);printf("%c%c %c%c", 174, 190, 190, 175);
 		
 	}
 	void borrar() {

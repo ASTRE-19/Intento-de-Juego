@@ -19,6 +19,7 @@ void ocultarCursor() {
 
 int main() {
 	ocultarCursor();
+	
 	NAVE N(7,7);  //Crear el objeto
 	N.pintar();
 
