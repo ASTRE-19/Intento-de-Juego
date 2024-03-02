@@ -25,6 +25,10 @@ public:
 		/*x = _x;
 		y = _y*/;
 	}; //Constructor otra forma
+
+	int getX() { return x; }
+	int getY() { return y; }
+
 	void pintar() {
 		gotoxy(x, y);printf("  %c",35);
 		gotoxy(x, y + 1);printf(" %c%c%c", 40, 207, 41);
@@ -111,6 +115,8 @@ public:
 			pintar();
 		}
 	}
+
+	void cor() { corazones--; }
 };
 
 
