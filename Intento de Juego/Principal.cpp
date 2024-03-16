@@ -61,7 +61,7 @@ int main() {
 				gotoxy((*it)->getX(), (*it)->getY());
 				printf(" ");
 				/*delete(*it);
-				it = B.erase(it);*/
+				it = B.erase(it)hbh;*/
 		    }
 			
 		}
